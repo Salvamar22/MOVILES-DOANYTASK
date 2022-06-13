@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivityListFragment">
+
+        <include
+            android:id="@+id/date_app_bar"
+            layout="@layout/date_app_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/text_activity_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/big16"
+            android:text="Lista de Actividades"
+            android:textColor="@color/black"
+            android:layout_below="@id/date_app_bar"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_below="@id/text_activity_list"
+            android:layout_alignParentBottom="true"
+            tools:listitem="@layout/item_activity" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/actionAddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/ic_baseline_add_24"
+            app:backgroundTint="@color/blue_400"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:rippleColor="@color/blue_800"
+            app:tint="@color/white" />
+    </RelativeLayout>
+</layout>
