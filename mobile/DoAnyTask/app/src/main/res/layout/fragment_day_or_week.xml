@@ -9,14 +9,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include android:id="@+id/date_app_bar" layout="@layout/date_app_bar" />
-
         <LinearLayout
             android:id="@+id/change_time_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_below="@id/date_app_bar"
+            android:layout_alignParentTop="true"
             android:paddingHorizontal="@dimen/big16">
 
             <ImageButton

@@ -7,13 +7,6 @@
         android:layout_height="match_parent"
         tools:context=".ActivityListFragment">
 
-        <include
-            android:id="@+id/date_app_bar"
-            layout="@layout/date_app_bar"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_alignParentTop="true" />
-
         <TextView
             android:id="@+id/text_activity_list"
             android:layout_width="match_parent"
@@ -21,7 +14,7 @@
             android:paddingLeft="@dimen/big16"
             android:text="Lista de Actividades"
             android:textColor="@color/black"
-            android:layout_below="@id/date_app_bar"/>
+            android:layout_alignParentTop="true" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/activity_list_recycler_view"
