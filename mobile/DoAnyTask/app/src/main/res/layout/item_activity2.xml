@@ -2,6 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="activity"
+            type="com.mejia.doanytask.Activity"/>
+    </data>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -29,7 +34,7 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Prioridad: alta"
+                    android:text="@{`Prioridad: ` + activity.priority}"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
                     android:textColor="@color/white"
                     android:textSize="@dimen/small12"
@@ -71,7 +76,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:text="Mar" />
+                        tools:text="Mar" />
                     <TextView
                         android:id="@+id/activity_day_month"
                         android:layout_width="wrap_content"
@@ -81,7 +86,7 @@
                         app:layout_constraintTop_toBottomOf="@id/activity_day_week"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        android:text="19"/>
+                        tools:text="19"/>
                     <TextView
                         android:id="@+id/activity_month"
                         android:layout_width="wrap_content"
@@ -92,7 +97,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        android:text="abr"/>
+                        tools:text="abr"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <com.google.android.material.divider.MaterialDivider
@@ -109,9 +114,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
+                        android:text="@{activity.description}"
                         android:textSize="@dimen/small12"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                        android:text="Evaluación práctica Análisis de Sistema.\nUca. Presentacion\nDiseño App" />
+                        tools:text="Evaluación práctica Análisis de Sistema.\nUca. Presentacion\nDiseño App" />
                     <TextView
                         android:id="@+id/text_hour"
                         android:layout_width="wrap_content"
@@ -120,7 +126,7 @@
                         android:layout_marginTop="8dp"
                         android:textSize="@dimen/small12"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                        android:text="7 AM" />
+                        tools:text="7 AM" />
                 </LinearLayout>
 
             </LinearLayout>

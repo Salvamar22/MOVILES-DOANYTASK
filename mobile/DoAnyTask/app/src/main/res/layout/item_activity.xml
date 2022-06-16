@@ -2,6 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="activity"
+            type="com.mejia.doanytask.Activity"/>
+    </data>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -29,13 +34,14 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@{`Prioridad: ` + activity.priority}"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
                     android:textColor="@color/white"
                     android:textSize="@dimen/small12"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:layout_editor_absoluteX="8dp"
-                    android:text="Prioridad: alta" />
+                    tools:text="Prioridad: alta" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
@@ -55,15 +61,16 @@
                 android:layout_marginTop="8dp"
                 android:textSize="@dimen/big16"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                android:text="Sabado, 23 Abril 2022" />
+                tools:text="Sabado, 23 Abril 2022" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:text="@{activity.description}"
                 android:textSize="@dimen/small12"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                android:text="Evaluación práctica Análisis de Sistema.\nUca. Presentacion\nDiseño App" />
+                tools:text="Evaluación práctica Análisis de Sistema.\nUca. Presentacion\nDiseño App" />
             <TextView
                 android:id="@+id/text_hour"
                 android:layout_width="wrap_content"
@@ -72,7 +79,7 @@
                 android:layout_marginTop="8dp"
                 android:textSize="@dimen/small12"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                android:text="7 AM" />
+                tools:text="7 AM" />
 
             <LinearLayout
                 android:layout_width="match_parent"
