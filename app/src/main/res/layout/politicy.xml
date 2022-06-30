@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="290dp"
+            android:layout_height="482dp"
+            android:background="@drawable/layout_post"
+            android:padding="40dp"
+            android:text="●Los datos de carácter personal son los que pueden ser utilizados para
+identificar a una persona o ponerse en contacto con ella.
+ Los datos de carácter personal recopilados permiten mantenerle
+informado acerca de los últimos productos, las actualizaciones
+de software disponibles y los próximos eventos.
+También se utilizan los datos de carácter personal como ayuda
+para elaborar, perfeccionar, gestionar,
+proporcionar y mejorar los productos, servicios, contenidos y
+publicidad, y con el propósito de evitar pérdidas y fraudes.
+Pueden utilizarse los datos de carácter personal para
+comprobar la identidad, colaborar en la identificación de
+usuarios y decidir los servicios apropiados.
+
+ "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0064FE"
+            android:text="Aceptar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.954" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

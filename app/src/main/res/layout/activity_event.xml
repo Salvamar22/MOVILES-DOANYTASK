@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/layout_post"
+        card_view:cardBackgroundColor="#DFE0E4"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="6dp"
+        card_view:layout_constraintCircleRadius="10dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.0"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="110dp"
+            android:layout_toStartOf="@+id/switch1"
+            android:text="Eventos Proximos"
+            android:textColor="#FF375F" />
+
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="12dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/event1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/switch1"
+            android:text="2 - Entrega de Diseño de Aplicación."
+            android:textColor="#262626" />
+
+        <TextView
+            android:id="@+id/event2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_home"
+            android:layout_alignTop="@+id/text_home"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toStartOf="@+id/switch1"
+            android:text="1 - Entrega de Documentacion."
+            android:textColor="#262626" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/event" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toEndOf="@+id/imageView1"
+            android:src="@drawable/account" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="324dp"
+            android:layout_height="19dp"
+            android:layout_below="@+id/event1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="34dp"
+            android:text="______________________________________________________________________________"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_prev"
+        android:layout_width="98dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="80dp"
+        android:text="Previsión"
+        android:textSize="10dp"
+        card_view:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="0.724"
+        android:background="@drawable/buttons_principal"/>
+
+    <Button
+        android:id="@+id/button_month"
+        android:layout_width="103dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="196dp"
+        android:text="Mes"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        card_view:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="0.733" />
+
+
+    <Button
+        android:id="@+id/btn_registrarse"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="292dp"
+        android:backgroundTint="@color/white"
+        android:text="Colaboraciones"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_task"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Tareas"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/btn_registrarse" />
+
+    <Button
+        android:id="@+id/btn_organization"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Organización"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/btn_task" />
+
+
+    <Button
+        android:id="@+id/btn_configuration"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/btn_organization"
+        android:backgroundTint="@color/white"
+        android:text="Configuracion"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Perfil"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/btn_configuration" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="#0064FE"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:tint="@color/white"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

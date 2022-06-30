@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".Collaboration.CollaborationActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeCard"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/layout_post"
+        card_view:cardCornerRadius="50dp"
+        card_view:cardElevation="20dp"
+        card_view:layout_constraintCircleRadius="10dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.0"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="60dp"
+            android:text="Proyecto de Análisis Numerico"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="40dp"
+            card_view:srcCompat="@drawable/perfil" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="125dp"
+            android:text="Henry Rivera"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="60dp"
+            android:text="UCA"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="186dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/buttons_seconds"
+            android:text="Salir"
+            android:textSize="7dp" />
+
+        <Button
+            android:id="@+id/button_view"
+            android:layout_width="75dp"
+            android:layout_height="29dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toEndOf="@+id/button_cancel"
+            android:background="@drawable/buttons_principal"
+            android:text="Ver"
+            android:textSize="7dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_tray"
+        android:layout_width="98dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Bandeja de Entrada"
+        android:textSize="8dp"
+        card_view:layout_constraintBottom_toTopOf="@+id/relativeCard"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="0.796" />
+
+    <Button
+        android:id="@+id/button_colActive"
+        android:layout_width="103dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/buttons_principal"
+        android:text="Colaboraciones Activas"
+        android:textColor="@color/white"
+        android:textSize="8dp"
+        card_view:layout_constraintBottom_toTopOf="@+id/relativeCard"
+        card_view:layout_constraintStart_toEndOf="@+id/button_tray"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="0.783" />
+
+    <Button
+        android:id="@+id/button_collabo"
+        android:layout_width="103dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Colaboradores"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        card_view:layout_constraintBottom_toTopOf="@+id/relativeCard"
+        card_view:layout_constraintStart_toEndOf="@+id/button_colActive"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="0.804" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="161dp"
+        android:layout_height="37dp"
+        card_view:layout_constraintBottom_toTopOf="@+id/button_colActive"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.912"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="0.231">
+
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="1dp"
+            android:ems="10"
+            android:hint="Buscar Colaboración"
+            android:inputType="textPersonName"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            card_view:srcCompat="@drawable/search" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
