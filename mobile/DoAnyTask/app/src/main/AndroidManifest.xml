@@ -51,6 +51,13 @@
         <activity android:name=".Organization.OrganizationActivity"
             android:exported="true">
         </activity>
+        //add Configuration
+        <activity android:name=".Configuration.ConfigurationActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Event.RegisterActivity"
+            android:exported="false">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
