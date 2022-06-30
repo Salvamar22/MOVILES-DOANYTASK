@@ -4,14 +4,17 @@
         android:id="@id/activityListFragment"
         android:title=""
         android:icon="@drawable/ic_outline_pending_activity_24"
+        android:menuCategory="secondary"
         />
     <item
         android:id="@id/monthlyFragment"
         android:title=""
         android:icon="@drawable/outline_calendar_24"
+        android:menuCategory="secondary"
         />
     <item
         android:title=""
         android:icon="@drawable/outline_reminder_24"
+        android:menuCategory="secondary"
         />
 </menu>
