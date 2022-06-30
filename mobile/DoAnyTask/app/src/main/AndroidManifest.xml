@@ -29,6 +29,18 @@
         <activity android:name=".Event.EventActivity"
             android:exported="true">
         </activity>
+        // add collaboration
+        <activity android:name=".Collaboration.CollaborationActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Collaboration.CollaborationSearchActivity"
+            android:exported="false"/>
+        <activity android:name=".Collaboration.CollaboPeopleActivity"
+            android:exported="false"/>
+        <activity android:name=".Collaboration.collaboratorsActivity"
+            android:exported="false"/>
+        <activity android:name=".Collaboration.CollaborationsContacts"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
