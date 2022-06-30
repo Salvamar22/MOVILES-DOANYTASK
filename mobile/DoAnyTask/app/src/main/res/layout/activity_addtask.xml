@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="25dp"
+    card_view:cardBackgroundColor="#DFE0E4"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="659dp">
+
+        <TextView
+            android:id="@+id/text_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="-28dp"
+            android:text="Nombre de tarea"
+            android:textColor="#94262626" />
+
+        <RelativeLayout
+            android:id="@+id/reTitle"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_gallery"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="38dp"
+            android:background="#FFFFFF"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="6dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintCircleRadius="10dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.49">
+
+            <EditText
+                android:id="@+id/EditTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:ems="10"
+                android:hint="Nueva tarea"
+                android:inputType="textPersonName"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reTitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="-28dp"
+            android:text="Fecha"
+            android:textColor="#94262626" />
+
+        <RelativeLayout
+            android:id="@+id/reUbi"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="38dp"
+            android:background="#FFFFFF"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="6dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintCircleRadius="10dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.49">
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:ems="10"
+                android:hint="Ingrese la fecha"
+                android:inputType="textPersonName"
+                android:textSize="12dp" />
+
+            <ImageButton
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="239dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/calendar_month" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reUbi"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="-28dp"
+            android:text="Hora"
+            android:textColor="#94262626" />
+
+        <RelativeLayout
+            android:id="@+id/rename"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="37dp"
+            android:background="#FFFFFF"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="6dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintCircleRadius="10dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.49">
+
+            <EditText
+                android:id="@+id/EditName"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:hint="Ingrese la hora"
+                android:inputType="time"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rename"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="-28dp"
+            android:text="Agregar Notas"
+            android:textColor="#94262626" />
+
+        <RelativeLayout
+            android:id="@+id/time"
+            android:layout_width="290dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/title4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="37dp"
+            android:background="#FFFFFF"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="6dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintCircleRadius="10dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.49">
+
+            <EditText
+                android:id="@+id/addnote"
+                android:layout_width="201dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="1dp"
+                android:ems="10"
+                android:hint="Ingrese una nota"
+                android:textSize="12dp" />
+
+            <ImageButton
+                android:id="@+id/btn_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="239dp"
+                android:layout_marginTop="-5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/add" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="-28dp"
+            android:text="Notas"
+            android:textColor="#94262626" />
+
+        <RelativeLayout
+            android:id="@+id/note1"
+            android:layout_width="296dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/title5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="38dp"
+            android:background="#FFFFFF"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="6dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintCircleRadius="10dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.49" />
+
+        <RelativeLayout
+            android:id="@+id/note2"
+            android:layout_width="296dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/note1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="38dp"
+            android:background="#FFFFFF"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="6dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintCircleRadius="10dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.49" />
+
+        <Button
+            android:id="@+id/button_prev"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/buttons_principal"
+            android:text="Agregar"
+            android:textSize="10dp"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="649dp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

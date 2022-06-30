@@ -41,6 +41,12 @@
             android:exported="false"/>
         <activity android:name=".Collaboration.CollaborationsContacts"
             android:exported="false"/>
+        //add Task
+        <activity android:name=".Task.TaskActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Task.AddTaskActivity"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
