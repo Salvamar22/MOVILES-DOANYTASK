@@ -19,6 +19,7 @@
         <entry key="..\:/ANDROID/PruebaProyecto/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_registrarse.xml" value="0.33" />
         <entry key="..\:/ANDROID/PruebaProyecto/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/imageprofile.xml" value="0.371875" />
         <entry key="..\:/ANDROID/PruebaProyecto/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/politicy.xml" value="0.33" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/drawable-v24/border_round.xml" value="0.293" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/drawable/buttons_principal.xml" value="0.18" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/drawable/buttons_seconds.xml" value="0.18" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/drawable/ic_baseline_group_24.xml" value="0.1165" />
@@ -40,6 +41,10 @@
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/activity_registrarse.xml" value="0.4" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/activity_task.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/collabform.xml" value="0.1" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/date_app_bar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/fragment_activity_list.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/fragment_day_or_week.xml" value="0.1" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/fragment_month.xml" value="0.5004633920296571" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/imageprofile.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/layout_post.xml" value="0.365625" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/politicy.xml" value="0.29074074074074074" />
@@ -48,6 +53,7 @@
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/viewdategtd.xml" value="0.1" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/viewdatekanban.xml" value="0.29074074074074074" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/layout/viewdateorgani.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/Ciclo 07/Analisis Numerico/Spike/MOVILES-DOANYTASK-login (1)/MOVILES-DOANYTASK-login/mobile/DoAnyTask/app/src/main/res/menu/main_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/activityListFragment">
+
+    <fragment
+        android:id="@+id/activityListFragment"
+        android:name="com.mejia.doanytask.ActivityListFragment"
+        android:label="ActivityListFragment" />
+    <fragment
+        android:id="@+id/monthlyFragment"
+        android:name="com.mejia.doanytask.MonthlyFragment"
+        android:label="MonthlyFragment" />
+    <fragment
+        android:id="@+id/weeklyFragment"
+        android:name="com.mejia.doanytask.WeeklyFragment"
+        android:label="WeeklyFragment" />
+    <fragment
+        android:id="@+id/dailyFragment"
+        android:name="com.mejia.doanytask.DailyFragment"
+        android:label="DailyFragment" />
+</navigation>

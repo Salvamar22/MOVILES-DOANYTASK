@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/activityListFragment"
+        android:title=""
+        android:icon="@drawable/ic_outline_pending_activity_24"
+        android:menuCategory="secondary"
+        />
+    <item
+        android:id="@id/monthlyFragment"
+        android:title=""
+        android:icon="@drawable/outline_calendar_24"
+        android:menuCategory="secondary"
+        />
+    <item
+        android:title=""
+        android:icon="@drawable/outline_reminder_24"
+        android:menuCategory="secondary"
+        />
+</menu>
