@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/activityListFragment">
+
+    <fragment
+        android:id="@+id/activityListFragment"
+        android:name="com.mejia.doanytask.ActivityListFragment"
+        android:label="ActivityListFragment" />
+    <fragment
+        android:id="@+id/monthlyFragment"
+        android:name="com.mejia.doanytask.MonthlyFragment"
+        android:label="MonthlyFragment" />
+    <fragment
+        android:id="@+id/weeklyFragment"
+        android:name="com.mejia.doanytask.WeeklyFragment"
+        android:label="WeeklyFragment" />
+    <fragment
+        android:id="@+id/dailyFragment"
+        android:name="com.mejia.doanytask.DailyFragment"
+        android:label="DailyFragment" />
+    <activity
+        android:id="@+id/eventActivity"
+        android:name="com.mejia.doanytask.Event.EventActivity"
+        android:label="EventActivity" />
+    <activity
+        android:id="@+id/taskActivity"
+        android:name="com.mejia.doanytask.Task.TaskActivity"
+        android:label="TaskActivity" />
+    <activity
+        android:id="@+id/collaborationActivity"
+        android:name="com.mejia.doanytask.Collaboration.CollaborationActivity"
+        android:label="activity_collaboration"
+        tools:layout="@layout/activity_collaboration" />
+    <activity
+        android:id="@+id/organizationActivity"
+        android:name="com.mejia.doanytask.Organization.OrganizationActivity"
+        android:label="OrganizationActivity" />
+    <activity
+        android:id="@+id/profileActivity"
+        android:name="com.mejia.doanytask.Profile.ProfileActivity"
+        android:label="ProfileActivity" />
+    <activity
+        android:id="@+id/configurationActivity"
+        android:name="com.mejia.doanytask.Configuration.ConfigurationActivity"
+        android:label="activity_configuration"
+        tools:layout="@layout/activity_configuration" />
+</navigation>
