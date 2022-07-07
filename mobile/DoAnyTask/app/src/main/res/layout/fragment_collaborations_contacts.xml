@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollaborationsContactsFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        tools:context=".Collaboration.">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeCard1"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:layout_marginTop="344dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/layout_post"
+            card_view:cardCornerRadius="50dp"
+            card_view:cardElevation="20dp"
+            card_view:layout_constraintCircleRadius="10dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.473"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="280dp"
+                android:layout_marginBottom="40dp"
+                card_view:srcCompat="@drawable/avatar4" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="101dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="125dp"
+                android:text="Gabriela Rivera"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView21"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="99dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="62dp"
+                android:text="Elaniin"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/button_cancel1"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/textView31"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="186dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="7dp"
+                android:backgroundTint="#F8F8F8"
+                android:text="Eliminar"
+                android:textColor="@color/black"
+                android:textSize="7dp" />
+
+            <Button
+                android:id="@+id/button_view1"
+                android:layout_width="74dp"
+                android:layout_height="29dp"
+                android:layout_below="@+id/textView31"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/button_cancel1"
+                android:background="@drawable/buttons_principal"
+                android:text="Ver"
+                android:textSize="7dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeCard"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/layout_post"
+            card_view:cardCornerRadius="50dp"
+            card_view:cardElevation="20dp"
+            card_view:layout_constraintCircleRadius="10dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="280dp"
+                android:layout_marginBottom="40dp"
+                card_view:srcCompat="@drawable/avatar1"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="101dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="125dp"
+                android:text="Henry Rivera"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="99dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="62dp"
+                android:text="henryrivera2@gmail.com"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="99dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="62dp"
+                android:text="UCA"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="256dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#F8F8F8"
+                android:text="Eliminar"
+                android:textColor="@color/black"
+                android:textSize="7dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="230dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="150dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent">
+
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="-1dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginBottom="1dp"
+                android:ems="10"
+                android:hint="Buscar Colaboración"
+                android:inputType="textPersonName"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                card_view:srcCompat="@drawable/search" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="91dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#F8F8F8"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Contactos"
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            card_view:layout_constraintBottom_toTopOf="@+id/relativeCard"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.681"
+            card_view:layout_constraintStart_toEndOf="@+id/relativeLayout7"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

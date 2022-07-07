@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityTaskFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="393dp"
+            android:layout_height="172dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/layout_post"
+            app:cardBackgroundColor="#DFE0E4"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            app:layout_constraintCircleRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="110dp"
+                android:text="Eventos Proximos"
+                android:textColor="#086E7D" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="324dp"
+                android:layout_height="19dp"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="-6dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="20dp"
+                android:text="_____________________________________________________________"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="233dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="136dp"
+                android:text="Entrega de Informe de avances."
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="233dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/text_home"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="136dp"
+                android:text="Entrega de Base de Datos"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="233dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/radioButton1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="136dp"
+                android:text="Entrega de Aplicación."
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_toEndOf="@+id/text_home"
+                android:text="20/04/2022"
+                android:textColor="#184C91" />
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="148dp"
+            app:backgroundTint="#0064FE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="37dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/task" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="124dp"
+            android:layout_marginBottom="44dp"
+            android:text="Tareas"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.633"
+            app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
