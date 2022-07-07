@@ -25,10 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        //add Event
-        <activity android:name=".Event.EventActivity"
-            android:exported="true">
-        </activity>
         // add collaboration
         <activity android:name=".Collaboration.CollaborationActivity"
             android:exported="true">

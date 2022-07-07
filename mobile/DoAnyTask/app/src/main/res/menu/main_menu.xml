@@ -8,7 +8,7 @@
         android:icon="@drawable/ic_outline_pending_activity_24"
         />
     <item
-        android:id="@id/eventActivity"
+        android:id="@id/acitivityEventFragment"
         android:title="Eventos"
         android:icon="@drawable/ic_outline_event_24"
         />
@@ -42,7 +42,7 @@
         android:id="@+id/menu_group_perfil"
         android:background="@color/white">
         <item
-            android:id="@id/profileActivity"
+            android:id="@id/activityProfileFragment"
             android:title="Perfil"
             android:icon="@drawable/outline_perfil_24"
             />

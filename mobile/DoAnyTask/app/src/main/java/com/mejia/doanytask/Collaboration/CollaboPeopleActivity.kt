@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.mejia.doanytask.Event.CustomDialogFragment
 import com.mejia.doanytask.R
 import kotlinx.android.synthetic.main.activity_collabopeople.*
 import kotlinx.android.synthetic.main.activity_registrarse.*

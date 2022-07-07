@@ -22,10 +22,6 @@
         android:name="com.mejia.doanytask.DailyFragment"
         android:label="DailyFragment" />
     <activity
-        android:id="@+id/eventActivity"
-        android:name="com.mejia.doanytask.Event.EventActivity"
-        android:label="EventActivity" />
-    <activity
         android:id="@+id/taskActivity"
         android:name="com.mejia.doanytask.Task.TaskActivity"
         android:label="TaskActivity" />
@@ -39,12 +35,18 @@
         android:name="com.mejia.doanytask.Organization.OrganizationActivity"
         android:label="OrganizationActivity" />
     <activity
-        android:id="@+id/profileActivity"
-        android:name="com.mejia.doanytask.Profile.ProfileActivity"
-        android:label="ProfileActivity" />
-    <activity
         android:id="@+id/configurationActivity"
         android:name="com.mejia.doanytask.Configuration.ConfigurationActivity"
         android:label="activity_configuration"
         tools:layout="@layout/activity_configuration" />
+    <fragment
+        android:id="@+id/acitivityEventFragment"
+        android:name="com.mejia.doanytask.ActivityEventFragment"
+        android:label="fragment_acitivity_event"
+        tools:layout="@layout/fragment_acitivity_event" />
+    <fragment
+        android:id="@+id/activityProfileFragment"
+        android:name="com.mejia.doanytask.ActivityProfileFragment"
+        android:label="fragment_activity_profile"
+        tools:layout="@layout/fragment_activity_profile" />
 </navigation>
