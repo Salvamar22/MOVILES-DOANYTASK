@@ -43,21 +43,6 @@
         </activity>
         <activity android:name=".Task.AddTaskActivity"
             android:exported="false"/>
-        //add Organization
-        <activity android:name=".Organization.OrganizationActivity"
-            android:exported="true">
-        </activity>
-        //add Configuration
-        <activity android:name=".Configuration.ConfigurationActivity"
-            android:exported="true">
-        </activity>
-        <activity android:name=".Event.RegisterActivity"
-            android:exported="false">
-        </activity>
-        //add Profile
-        <activity android:name=".Profile.ProfileActivity"
-            android:exported="true">
-        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"

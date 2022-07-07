@@ -31,10 +31,6 @@
         android:label="activity_collaboration"
         tools:layout="@layout/activity_collaboration" />
     <activity
-        android:id="@+id/organizationActivity"
-        android:name="com.mejia.doanytask.Organization.OrganizationActivity"
-        android:label="OrganizationActivity" />
-    <activity
         android:id="@+id/configurationActivity"
         android:name="com.mejia.doanytask.Configuration.ConfigurationActivity"
         android:label="activity_configuration"
@@ -49,4 +45,14 @@
         android:name="com.mejia.doanytask.ActivityProfileFragment"
         android:label="fragment_activity_profile"
         tools:layout="@layout/fragment_activity_profile" />
+    <fragment
+        android:id="@+id/activityOrganizationFragment"
+        android:name="com.mejia.doanytask.ActivityOrganizationFragment"
+        android:label="fragment_activity_organization"
+        tools:layout="@layout/fragment_activity_organization" />
+    <fragment
+        android:id="@+id/configurationFragment"
+        android:name="com.mejia.doanytask.ConfigurationFragment"
+        android:label="fragment_configuration"
+        tools:layout="@layout/fragment_configuration" />
 </navigation>

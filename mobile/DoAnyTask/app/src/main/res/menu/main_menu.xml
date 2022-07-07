@@ -33,7 +33,7 @@
         android:icon="@drawable/outline_calendar_24"
         />
     <item
-        android:id="@id/organizationActivity"
+        android:id="@id/activityOrganizationFragment"
         android:title="Organizacion"
         android:icon="@drawable/outline_organization"
         app:tint="@color/white"
@@ -48,7 +48,7 @@
             />
     </group>
     <item
-        android:id="@id/configurationActivity"
+        android:id="@id/configurationFragment"
         android:title="Configuracion"
         android:icon="@drawable/outline_settings_24"
         />
