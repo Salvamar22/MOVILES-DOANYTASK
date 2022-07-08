@@ -32,43 +32,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        //add Event
-        <activity android:name=".Event.EventActivity"
-            android:exported="true">
-        </activity>
-        // add collaboration
-        <activity android:name=".Collaboration.CollaborationActivity"
-            android:exported="true">
-        </activity>
-        <activity android:name=".Collaboration.CollaborationSearchActivity"
-            android:exported="false"/>
-        <activity android:name=".Collaboration.CollaboPeopleActivity"
-            android:exported="false"/>
-        <activity android:name=".Collaboration.collaboratorsActivity"
-            android:exported="false"/>
-        <activity android:name=".Collaboration.CollaborationsContacts"
-            android:exported="false"/>
-        //add Task
-        <activity android:name=".Task.TaskActivity"
-            android:exported="true">
-        </activity>
-        <activity android:name=".Task.AddTaskActivity"
-            android:exported="false"/>
-        //add Organization
-        <activity android:name=".Organization.OrganizationActivity"
-            android:exported="true">
-        </activity>
-        //add Configuration
-        <activity android:name=".Configuration.ConfigurationActivity"
-            android:exported="true">
-        </activity>
-        <activity android:name=".Event.RegisterActivity"
-            android:exported="false">
-        </activity>
-        //add Profile
-        <activity android:name=".Profile.ProfileActivity"
-            android:exported="true">
-        </activity>
     </application>
 
 </manifest>

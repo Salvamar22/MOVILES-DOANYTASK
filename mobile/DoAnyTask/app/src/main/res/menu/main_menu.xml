@@ -8,12 +8,12 @@
         android:icon="@drawable/ic_outline_pending_activity_24"
         />
     <item
-        android:id="@id/eventActivity"
+        android:id="@id/acitivityEventFragment"
         android:title="Eventos"
         android:icon="@drawable/ic_outline_event_24"
         />
     <item
-        android:id="@id/taskActivity"
+        android:id="@id/activityTaskFragment"
         android:title="Tareas"
         android:icon="@drawable/ic_outline_task_24"
         />
@@ -22,7 +22,7 @@
         android:icon="@drawable/outline_reminder_24"
         />
     <item
-        android:id="@id/collaborationActivity"
+        android:id="@id/activityCollaborationFragment"
         android:title="Colaboración"
         android:icon="@drawable/outline_colaboration_24"
         />
@@ -33,7 +33,7 @@
         android:icon="@drawable/outline_calendar_24"
         />
     <item
-        android:id="@id/organizationActivity"
+        android:id="@id/activityOrganizationFragment"
         android:title="Organizacion"
         android:icon="@drawable/outline_organization"
         app:tint="@color/white"
@@ -42,13 +42,13 @@
         android:id="@+id/menu_group_perfil"
         android:background="@color/white">
         <item
-            android:id="@id/profileActivity"
+            android:id="@id/activityProfileFragment"
             android:title="Perfil"
             android:icon="@drawable/outline_perfil_24"
             />
     </group>
     <item
-        android:id="@id/configurationActivity"
+        android:id="@id/configurationFragment"
         android:title="Configuracion"
         android:icon="@drawable/outline_settings_24"
         />

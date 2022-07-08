@@ -22,29 +22,94 @@
         android:name="com.mejia.doanytask.activities.DailyFragment"
         android:label="DailyFragment" />
     <activity
-        android:id="@+id/eventActivity"
-        android:name="com.mejia.doanytask.Event.EventActivity"
-        android:label="EventActivity" />
-    <activity
-        android:id="@+id/taskActivity"
-        android:name="com.mejia.doanytask.Task.TaskActivity"
-        android:label="TaskActivity" />
-    <activity
         android:id="@+id/collaborationActivity"
         android:name="com.mejia.doanytask.Collaboration.CollaborationActivity"
         android:label="activity_collaboration"
         tools:layout="@layout/activity_collaboration" />
-    <activity
-        android:id="@+id/organizationActivity"
-        android:name="com.mejia.doanytask.Organization.OrganizationActivity"
-        android:label="OrganizationActivity" />
-    <activity
-        android:id="@+id/profileActivity"
-        android:name="com.mejia.doanytask.Profile.ProfileActivity"
-        android:label="ProfileActivity" />
-    <activity
-        android:id="@+id/configurationActivity"
-        android:name="com.mejia.doanytask.Configuration.ConfigurationActivity"
-        android:label="activity_configuration"
-        tools:layout="@layout/activity_configuration" />
+
+    <fragment
+        android:id="@+id/acitivityEventFragment"
+        android:name="com.mejia.doanytask.ActivityEventFragment"
+        android:label="fragment_acitivity_event"
+        tools:layout="@layout/fragment_acitivity_event" />
+    <fragment
+        android:id="@+id/activityProfileFragment"
+        android:name="com.mejia.doanytask.ActivityProfileFragment"
+        android:label="fragment_activity_profile"
+        tools:layout="@layout/fragment_activity_profile" />
+    <fragment
+        android:id="@+id/activityOrganizationFragment"
+        android:name="com.mejia.doanytask.ActivityOrganizationFragment"
+        android:label="fragment_activity_organization"
+        tools:layout="@layout/fragment_activity_organization" />
+    <fragment
+        android:id="@+id/configurationFragment"
+        android:name="com.mejia.doanytask.ConfigurationFragment"
+        android:label="fragment_configuration"
+        tools:layout="@layout/fragment_configuration" />
+    <fragment
+        android:id="@+id/activityTaskFragment"
+        android:name="com.mejia.doanytask.ActivityTaskFragment"
+        android:label="fragment_activity_task"
+        tools:layout="@layout/fragment_activity_task" />
+    <fragment
+        android:id="@+id/activityCollaborationFragment"
+        android:name="com.mejia.doanytask.ActivityCollaborationFragment"
+        android:label="fragment_activity_collaboration"
+        tools:layout="@layout/fragment_activity_collaboration" />
+    <fragment
+        android:id="@+id/collaboPeopleFragment"
+        android:name="com.mejia.doanytask.CollaboPeopleFragment"
+        android:label="fragment_collabo_people"
+        tools:layout="@layout/fragment_collabo_people" />
+    <fragment
+        android:id="@+id/collaborationsContactsFragment"
+        android:name="com.mejia.doanytask.CollaborationsContactsFragment"
+        android:label="fragment_collaborations_contacts"
+        tools:layout="@layout/fragment_collaborations_contacts" />
+    <fragment
+        android:id="@+id/collaborationSearchFragment"
+        android:name="com.mejia.doanytask.CollaborationSearchFragment"
+        android:label="fragment_collaboration_search"
+        tools:layout="@layout/fragment_collaboration_search" />
+    <fragment
+        android:id="@+id/collaborationDataFragment"
+        android:name="com.mejia.doanytask.CollaborationDataFragment"
+        android:label="fragment_collaboration_data"
+        tools:layout="@layout/fragment_collaboration_data" />
+    <fragment
+        android:id="@+id/dialogCollaborationFragment"
+        android:name="com.mejia.doanytask.DialogCollaborationFragment"
+        android:label="fragment_dialog_collaboration"
+        tools:layout="@layout/fragment_dialog_collaboration" />
+    <fragment
+        android:id="@+id/activityAddTaskFragment"
+        android:name="com.mejia.doanytask.ActivityAddTaskFragment"
+        android:label="fragment_activity_add_task"
+        tools:layout="@layout/fragment_activity_add_task" />
+    <fragment
+        android:id="@+id/registrationEventFragment"
+        android:name="com.mejia.doanytask.RegistrationEventFragment"
+        android:label="fragment_registration_event"
+        tools:layout="@layout/fragment_registration_event" />
+    <fragment
+        android:id="@+id/dialogPomodoroFragment"
+        android:name="com.mejia.doanytask.DialogPomodoroFragment"
+        android:label="fragment_dialog_pomodoro"
+        tools:layout="@layout/fragment_dialog_pomodoro" />
+    <fragment
+        android:id="@+id/dialogKanbanFragment"
+        android:name="com.mejia.doanytask.DialogKanbanFragment"
+        android:label="fragment_dialog_kanban"
+        tools:layout="@layout/fragment_dialog_kanban" />
+    <fragment
+        android:id="@+id/dialogGtdFragment"
+        android:name="com.mejia.doanytask.DialogGtdFragment"
+        android:label="fragment_dialog_gtd"
+        tools:layout="@layout/fragment_dialog_gtd" />
+    <fragment
+        android:id="@+id/collaboratorsFragment"
+        android:name="com.mejia.doanytask.CollaboratorsFragment"
+        android:label="fragment_collaborators"
+        tools:layout="@layout/fragment_collaborators" />
 </navigation>

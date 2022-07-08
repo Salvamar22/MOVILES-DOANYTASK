@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.mejia.doanytask.Event.EventActivity
 import com.mejia.doanytask.MainActivity
 import com.mejia.doanytask.R
 
