@@ -122,7 +122,9 @@
             app:backgroundTint="#0064FE"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
             app:srcCompat="@android:drawable/ic_input_add"
+            android:onClick="actionAddTask"
             app:tint="@color/white" />
 
         <ImageView

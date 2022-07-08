@@ -90,6 +90,7 @@
                 android:background="@drawable/buttons_principal"
                 android:text="Ver"
                 android:textColor="@color/white"
+                android:onClick="actionViewKanban"
                 android:textSize="7dp" />
 
         </RelativeLayout>
@@ -152,7 +153,7 @@
                 android:textColor="@color/black" />
 
             <Button
-                android:id="@+id/button_organization"
+                android:id="@+id/button_pomodoro"
                 android:layout_width="75dp"
                 android:layout_height="30dp"
                 android:layout_below="@+id/textView3"
@@ -166,6 +167,7 @@
                 android:background="@drawable/buttons_principal"
                 android:text="Ver"
                 android:textColor="@color/white"
+                android:onClick="actionViewPomodoro"
                 android:textSize="7dp" />
 
 
@@ -245,6 +247,7 @@
                 android:background="@drawable/buttons_principal"
                 android:text="Ver"
                 android:textColor="@color/white"
+                android:onClick="actionViewGtd"
                 android:textSize="7dp" />
 
         </RelativeLayout>

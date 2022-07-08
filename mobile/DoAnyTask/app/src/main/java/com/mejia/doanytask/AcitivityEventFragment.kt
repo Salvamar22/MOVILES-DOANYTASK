@@ -16,4 +16,6 @@ class ActivityEventFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_acitivity_event, container, false)
     }
 
+
+
 }

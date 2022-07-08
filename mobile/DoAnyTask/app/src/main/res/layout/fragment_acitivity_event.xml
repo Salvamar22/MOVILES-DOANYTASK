@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,10 +12,7 @@
         android:layout_height="match_parent"
         android:text="@string/eventfragment" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout    xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp"
@@ -27,14 +25,14 @@
             android:layout_height="141dp"
             android:layout_marginTop="128dp"
             android:background="@drawable/layout_post"
-            card_view:cardBackgroundColor="#DFE0E4"
-            card_view:cardCornerRadius="10dp"
-            card_view:cardElevation="6dp"
-            card_view:layout_constraintCircleRadius="10dp"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintHorizontal_bias="0.0"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent">
+            app:cardBackgroundColor="#DFE0E4"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            app:layout_constraintCircleRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/text_home"
@@ -137,10 +135,10 @@
             android:layout_marginStart="80dp"
             android:text="Previsión"
             android:textSize="10dp"
-            card_view:layout_constraintBottom_toTopOf="@+id/relativeLayout"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.724"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.724"
             android:background="@drawable/buttons_principal"/>
 
         <Button
@@ -152,23 +150,26 @@
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
             android:textSize="10dp"
-            card_view:layout_constraintBottom_toTopOf="@+id/relativeLayout"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.733" />
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.733" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_add"
+            android:id="@+id/action_event"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="224dp"
             app:backgroundTint="#0064FE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintVertical_bias="0.744"
             app:srcCompat="@android:drawable/ic_input_add"
-            app:tint="@color/white"
-            card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintEnd_toEndOf="parent" />
+            android:onClick="actionEventadd"
+            app:tint="@color/white" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -10,10 +10,13 @@
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_collaborators.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_collacontacts.xml" value="0.36102564102564105" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_configuration.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_login.xml" value="0.36102564102564105" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_main.xml" value="0.36102564102564105" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_organization.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_registerevent.xml" value="0.1" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_registrarse.xml" value="0.36102564102564105" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_task.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/date_app_bar.xml" value="0.36102564102564105" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_acitivity_event.xml" value="0.365625" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_activity_add_task.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_activity_collaboration.xml" value="0.36666666666666664" />
@@ -27,12 +30,23 @@
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_collaboration_data.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_collaboration_search.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_collaborations_contacts.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_collaborators.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_configuration.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_dialog_collaboration.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_dialog_gtd.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_dialog_kanban.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_dialog_organization.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_dialog_pomodoro.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_month.xml" value="0.36102564102564105" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_organization.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/fragment_registration_event.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/main_menu_header.xml" value="0.36102564102564105" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/profile.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/viewcollaboration.xml" value="0.36102564102564105" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/viewcollaborators.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/viewdategtd.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/viewdatekanban.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/viewdateorgani.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/menu/main_menu.xml" value="0.36102564102564105" />
       </map>
     </option>
