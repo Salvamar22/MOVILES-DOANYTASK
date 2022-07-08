@@ -160,6 +160,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         button_contact(R.id.collaborationSearchFragment, view)
     }
 
+    //Collaborators add
+    fun dialogcollaborators(view: View) {
+        btnForm(R.id.registrationEventFragment, view)
+    }
+
     private fun actionDateActivityBar(id: Int, button: View) {
         if (id != navController.currentDestination?.id) {
             navController.navigate(id)
@@ -247,6 +252,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             navController.navigate(id)
         } else {
             navController.navigate(R.id.collaborationsContactsFragment)
+        }
+    }
+
+    //Dialog Colaboratoros
+    private fun btnForm(id: Int, button: View) {
+        if (id != navController.currentDestination?.id) {
+            navController.navigate(id)
+        } else {
+            navController.navigate(R.id.dialogCollaborationFragment)
         }
     }
 
