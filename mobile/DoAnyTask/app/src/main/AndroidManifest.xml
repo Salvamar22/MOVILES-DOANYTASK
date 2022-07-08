@@ -25,24 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        // add collaboration
-        <activity android:name=".Collaboration.CollaborationActivity"
-            android:exported="true">
-        </activity>
-        <activity android:name=".Collaboration.CollaborationSearchActivity"
-            android:exported="false"/>
-        <activity android:name=".Collaboration.CollaboPeopleActivity"
-            android:exported="false"/>
-        <activity android:name=".Collaboration.collaboratorsActivity"
-            android:exported="false"/>
-        <activity android:name=".Collaboration.CollaborationsContacts"
-            android:exported="false"/>
-        //add Task
-        <activity android:name=".Task.TaskActivity"
-            android:exported="true">
-        </activity>
-        <activity android:name=".Task.AddTaskActivity"
-            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
