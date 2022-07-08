@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/activityListFragment"
-        android:name="com.mejia.doanytask.ActivityListFragment"
+        android:name="com.mejia.doanytask.activities.ActivityListFragment"
         android:label="ActivityListFragment" />
     <fragment
         android:id="@+id/monthlyFragment"
-        android:name="com.mejia.doanytask.MonthlyFragment"
+        android:name="com.mejia.doanytask.activities.MonthlyFragment"
         android:label="MonthlyFragment" />
     <fragment
         android:id="@+id/weeklyFragment"
-        android:name="com.mejia.doanytask.WeeklyFragment"
+        android:name="com.mejia.doanytask.activities.WeeklyFragment"
         android:label="WeeklyFragment" />
     <fragment
         android:id="@+id/dailyFragment"
-        android:name="com.mejia.doanytask.DailyFragment"
+        android:name="com.mejia.doanytask.activities.DailyFragment"
         android:label="DailyFragment" />
     <activity
         android:id="@+id/eventActivity"

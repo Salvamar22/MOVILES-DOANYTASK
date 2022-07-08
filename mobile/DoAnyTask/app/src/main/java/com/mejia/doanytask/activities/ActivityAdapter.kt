@@ -1,14 +1,16 @@
-package com.mejia.doanytask
+package com.mejia.doanytask.activities
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.mejia.doanytask.R
+import com.mejia.doanytask.data.model.Activity
 import com.mejia.doanytask.databinding.ItemActivity2Binding
 import com.mejia.doanytask.databinding.ItemActivityBinding
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-
+/*
 
 data class Activity (
     val description: String,
@@ -22,7 +24,7 @@ data class Activity (
         return date.format(DateTimeFormatter.ofPattern("dd MMMM yyyy"))
     }
 }
-
+*/
 open class ActivityAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val ITEM_TYPE_DEFAULT = 0
@@ -41,7 +43,7 @@ open class ActivityAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         fun bind(activity: Activity) {
             binding.activity = activity
             //binding.textHour.text = activity.getHour()
-            binding.textDate.text = activity.getDate()
+            binding.textDate.text = activity.date
             binding.executePendingBindings()}
 
     }
@@ -49,7 +51,7 @@ open class ActivityAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     inner class ActivityViewHolder2(private val binding: ItemActivity2Binding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(activity: Activity) {
             binding.activity = activity
-            binding.textHour.text = activity.getHour()
+            binding.textHour.text = activity.hour
             binding.activityDayWeek.text = activity.date.format(DateTimeFormatter.ofPattern("dd"))
             binding.activityMonth.text = activity.date.format(DateTimeFormatter.ofPattern("MMM"))
             binding.activityDayMonth.text = activity.date.format(DateTimeFormatter.ofPattern("dd"))

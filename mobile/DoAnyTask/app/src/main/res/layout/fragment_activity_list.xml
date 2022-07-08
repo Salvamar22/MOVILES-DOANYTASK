@@ -5,7 +5,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ActivityListFragment">
+        tools:context=".activities.ActivityListFragment">
 
         <TextView
             android:id="@+id/text_activity_list"

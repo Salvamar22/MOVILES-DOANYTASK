@@ -1,4 +1,4 @@
-package com.mejia.doanytask
+package com.mejia.doanytask.activities
 
 import android.content.res.ColorStateList
 import android.os.Bundle
@@ -10,6 +10,8 @@ import androidx.appcompat.app.ActionBar
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
+import com.mejia.doanytask.MainActivity
+import com.mejia.doanytask.R
 import com.mejia.doanytask.databinding.FragmentMonthBinding
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter

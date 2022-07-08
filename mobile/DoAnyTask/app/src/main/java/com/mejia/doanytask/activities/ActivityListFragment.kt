@@ -1,4 +1,4 @@
-package com.mejia.doanytask
+package com.mejia.doanytask.activities
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,9 +7,11 @@ import android.view.ViewGroup
 import androidx.appcompat.app.ActionBar
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.mejia.doanytask.MainActivity
+import com.mejia.doanytask.R
+import com.mejia.doanytask.data.model.Activity
 import com.mejia.doanytask.databinding.FragmentActivityListBinding
 import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 
 class ActivityListFragment : Fragment() {
 
@@ -30,11 +32,15 @@ class ActivityListFragment : Fragment() {
 
         val acts = List<Activity>(6) { it ->
             Activity(
-                "Evaluación práctica ${it + 1}.\n" +
-                        "Uca. Presentacion\n" +
-                        "Diseño App",
-                "alta",
-                LocalDateTime.of(2022, it + 2, 5, 14, 30)
+
+                it.toString(),
+                "Evaluación práctica ${it + 1}.\n" ,
+                "Alta",
+                "Uca.",
+                "2022/" + it + 2 + "/5",
+                "14:30",
+                "Presentacion\n" + "Diseño App",
+                "", ""
             )
         }
 

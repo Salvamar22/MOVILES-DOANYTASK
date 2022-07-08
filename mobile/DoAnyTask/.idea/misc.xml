@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/date_app_bar.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_activity_list.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_day_or_week.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/item_activity.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/item_activity2.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/xml/network_security_config.xml" value="0.11388888888888889" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

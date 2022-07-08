@@ -1,9 +1,10 @@
-package com.mejia.doanytask
+package com.mejia.doanytask.activities
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.mejia.doanytask.R
 import com.mejia.doanytask.databinding.CalendarCellBinding
 
 class CalendarAdapter : RecyclerView.Adapter<CalendarAdapter.CalendarViewHolder>() {
