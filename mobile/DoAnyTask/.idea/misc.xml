@@ -3,6 +3,41 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/activity_login.xml" value="0.17849898580121704" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/activity_main.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/activity_registrarse.xml" value="0.2" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/calendar_cell.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/collabform.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/date_app_bar.xml" value="0.1" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_acitivity_event.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_activity_add_task.xml" value="0.4" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_activity_collaboration.xml" value="0.264" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_activity_list.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_activity_organization.xml" value="0.264" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_activity_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_collabo_people.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_collaboration_data.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_collaboration_search.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_collaborations_contacts.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_collaborators.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_configuration.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_day_or_week.xml" value="0.1" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_dialog_collaboration.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_dialog_gtd.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_dialog_kanban.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_dialog_pomodoro.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_event.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_month.xml" value="0.2" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_registration_event.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/fragment_task.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/imageprofile.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/item_activity.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/item_activity2.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/main_menu_header.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/politicy.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/viewcollaboration.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/layout/viewcollaborators.xml" value="0.25" />
+        <entry key="..\:/Users/Madriz/Documents/PDM/poryecto-doanytask/mobile/DoAnyTask/app/src/main/res/menu/main_menu.xml" value="0.14166666666666666" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_addtask.xml" value="0.5625823451910409" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_collabopeople.xml" value="0.36102564102564105" />
         <entry key="..\:/Users/erick/OneDrive/Escritorio/UCA/APP-DoAnyTask/MOVILES-DOANYTASK/mobile/DoAnyTask/app/src/main/res/layout/activity_collaboration.xml" value="0.36666666666666664" />
@@ -54,4 +89,11 @@
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
+  </component>
 </project>

@@ -11,7 +11,7 @@ interface ActivityDao {
     fun getAllActivities(): LiveData<List<Activity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertActivity(activity: Activity)
+    suspend fun insertActivity(activity: Activity): Long
 
     /*@Update
     suspend fun updateActivity(activity: Activity)

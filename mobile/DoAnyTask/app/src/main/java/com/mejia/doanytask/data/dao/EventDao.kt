@@ -11,7 +11,7 @@ interface EventDao {
     fun getAllEvents(): LiveData<List<Event>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertEvent(event: Event)
+    suspend fun insertEvent(event: Event): Long
 
     /*@Update
     suspend fun updateEvent(event: Event)

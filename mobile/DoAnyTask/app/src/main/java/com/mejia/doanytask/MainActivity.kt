@@ -1,5 +1,6 @@
 package com.mejia.doanytask
 
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
@@ -16,11 +17,13 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.fragment_acitivity_event.*
-import kotlinx.android.synthetic.main.fragment_activity_organization.*
-import kotlinx.android.synthetic.main.fragment_activity_task.*
+import com.mejia.doanytask.login.LoginActivity
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
+    val app by lazy {
+        application as DoAnyTaskApplication
+    }
+
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var navigationView: NavigationView
@@ -87,13 +90,36 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.logout -> {
-                // TODO
+                app.saveAuthToken("")
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
+                true
+            }
+            R.id.monthlyFragment, R.id.activityListFragment -> {
+                if (item.itemId != navController.currentDestination?.id) {
+                    val handle = NavigationUI.onNavDestinationSelected(item, navController)
+                    drawerLayout.close()
+                    handle
+
+                } else {
+                    drawerLayout.close()
+                    navController.navigate(R.id.activityListFragment)
+                }
                 true
             }
             else -> {
-                val handle = NavigationUI.onNavDestinationSelected(item, navController)
-                drawerLayout.close()
-                handle
+                if (item.itemId != navController.currentDestination?.id) {
+                    this.supportActionBar!!.setCustomView(null);
+                    val handle = NavigationUI.onNavDestinationSelected(item, navController)
+                    drawerLayout.close()
+                    handle
+
+                } else {
+                    drawerLayout.close()
+                    navController.navigate(R.id.activityListFragment)
+                }
+                true
             }
         }
     }
@@ -117,52 +143,52 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     //Event
     fun actionEventadd(view: View) {
-        action_event(R.id.acitivityEventFragment, view)
+        goToDestination(R.id.acitivityEventFragment, view)
     }
 
     //task
     fun actionAddTask(view: View) {
-        action_add(R.id.activityAddTaskFragment, view)
+        goToDestination(R.id.activityAddTaskFragment, view)
     }
 
     //Organization Pomodoro
     fun actionViewPomodoro(view: View) {
-        button_pomodoro(R.id.activityOrganizationFragment, view)
+        goToDestination(R.id.activityOrganizationFragment, view)
     }
 
     //Organization Kanban
     fun actionViewKanban(view: View) {
-        button_kanban(R.id.activityOrganizationFragment, view)
+        goToDestination(R.id.activityOrganizationFragment, view)
     }
 
     //Organization Gtd
     fun actionViewGtd(view: View) {
-        button_gtd(R.id.activityOrganizationFragment, view)
+        goToDestination(R.id.activityOrganizationFragment, view)
     }
 
     //Function Collaborators Active
     fun collaboratorsactive(view: View) {
-        button_colActive(R.id.activityCollaborationFragment, view)
+        goToDestination(R.id.activityCollaborationFragment, view)
     }
 
     //Function People Collaborators
     fun collaboratorspeople(view: View){
-        button_collabo(R.id.activityCollaborationFragment, view)
+        goToDestination(R.id.activityCollaborationFragment, view)
     }
 
     // Search Collaborators
     fun searchcollaborators(view: View) {
-        button_search(R.id.activityCollaborationFragment, view)
+        goToDestination(R.id.activityCollaborationFragment, view)
     }
 
     // Contacts
     fun contactscollaborators(view: View) {
-        button_contact(R.id.collaborationSearchFragment, view)
+        goToDestination(R.id.collaborationSearchFragment, view)
     }
 
     //Collaborators add
     fun dialogcollaborators(view: View) {
-        btnForm(R.id.registrationEventFragment, view)
+        goToDestination(R.id.registrationEventFragment, view)
     }
 
     private fun actionDateActivityBar(id: Int, button: View) {
@@ -173,94 +199,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-    //Functioon Event
-    private fun action_event(id: Int, button: View) {
-        if (id != navController.currentDestination?.id) {
-            navController.navigate(id)
-        } else {
-            navController.navigate(R.id.registrationEventFragment)
-        }
-    }
+    private fun goToDestination(id: Int, button: View) {
+        val apo: ActionBar =this.supportActionBar!!;
+        apo.setCustomView(null);
 
-    //Function Task
-    private fun action_add(id: Int, button: View) {
-        if (id != navController.currentDestination?.id) {
-            navController.navigate(id)
-        } else {
-            navController.navigate(R.id.activityAddTaskFragment)
-        }
-    }
-
-
-    //Function Pomodoro
-    private fun button_pomodoro(id: Int, button: View) {
         if (id != navController.currentDestination?.id) {
             navController.navigate(id)
         } else {
             navController.navigate(R.id.dialogPomodoroFragment)
-        }
-    }
-
-    //Function Kanban
-    private fun button_kanban(id: Int, button: View) {
-        if (id != navController.currentDestination?.id) {
-            navController.navigate(id)
-        } else {
-            navController.navigate(R.id.dialogKanbanFragment)
-        }
-    }
-
-    //Function Gtd
-    private fun button_gtd(id: Int, button: View) {
-        if (id != navController.currentDestination?.id) {
-            navController.navigate(id)
-        } else {
-            navController.navigate(R.id.dialogGtdFragment)
-        }
-    }
-
-    //Function Collabo Active
-    private fun button_colActive(id: Int, button: View) {
-        if (id != navController.currentDestination?.id) {
-            navController.navigate(id)
-        } else {
-            navController.navigate(R.id.collaboPeopleFragment)
-        }
-    }
-
-    //Function Collabo People
-    private fun button_collabo(id: Int, button: View) {
-        if (id != navController.currentDestination?.id) {
-            navController.navigate(id)
-        } else {
-            navController.navigate(R.id.collaboratorsFragment)
-        }
-    }
-
-    //Function Search Collaborators
-    private fun button_search(id: Int, button: View) {
-        if (id != navController.currentDestination?.id) {
-            navController.navigate(id)
-        } else {
-            navController.navigate(R.id.collaborationSearchFragment)
-        }
-    }
-
-    //Function Contacts Collaborators
-    private fun button_contact(id: Int, button: View) {
-        if (id != navController.currentDestination?.id) {
-            navController.navigate(id)
-        } else {
-            navController.navigate(R.id.collaborationsContactsFragment)
-        }
-    }
-
-    //Dialog Colaboratoros
-    private fun btnForm(id: Int, button: View) {
-        if (id != navController.currentDestination?.id) {
-            navController.navigate(id)
-        } else {
-            navController.navigate(R.id.dialogCollaborationFragment)
         }
     }
 

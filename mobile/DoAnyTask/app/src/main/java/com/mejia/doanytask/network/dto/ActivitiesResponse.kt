@@ -6,7 +6,7 @@ data class ActivitiesResponse (
     val count: Int,
     val hastNext: Boolean,
     val hastPrev: Boolean,
-    val activities:List<Activity>,
+    val data:List<Activity>,
     val nextPage: String,
     val prevPage: String
 )

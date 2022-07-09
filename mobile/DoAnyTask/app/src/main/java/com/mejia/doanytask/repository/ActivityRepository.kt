@@ -1,5 +1,6 @@
 package com.manuelmadriz.dummydictionary.repository
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.mejia.doanytask.data.DoAnyTaskDatabase
@@ -18,8 +19,9 @@ class ActivityRepository(database: DoAnyTaskDatabase, private val api: AllServic
             val response = api.getAllActivities()
 
             if (response.count > 0) {
-                for(i in 0..response.count){
-                    activityDao.insertActivity(response.activities[i])
+                for(i in 0 until (response.count - 1)){
+                    Log.d("Creation", "Antes de hacer cosas con dao");
+                    activityDao.insertActivity(response.data[i])
                 }
             }
             ApiResponse.Success(data = activityDao.getAllActivities())
@@ -29,4 +31,7 @@ class ActivityRepository(database: DoAnyTaskDatabase, private val api: AllServic
             ApiResponse.Error(exception = e)
         }
     }
+    /*suspend fun createActivity(): ApiResponse<Activity> {
+
+    }*/
 }

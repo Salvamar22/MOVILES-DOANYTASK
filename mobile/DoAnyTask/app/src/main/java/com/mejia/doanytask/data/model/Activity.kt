@@ -1,18 +1,19 @@
 package com.mejia.doanytask.data.model
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "activity_table")
 data class Activity (
     @PrimaryKey
-    val _id: String,
-    var name: String,
-    var priority: String?,
-    var ubication: String,
-    var date: String,
-    var hour: String,
-    var description: String,
-    val user_id: String?,
-    var event_id: String?
+    @ColumnInfo(name = "_id") val _id: String,
+    @ColumnInfo(name = "name") var name: String,
+    @ColumnInfo(name = "ubication") var ubication: String,
+    @ColumnInfo(name = "description") var description: String,
+    @ColumnInfo(name = "date") var date: String,
+    @ColumnInfo(name = "hour") var hour: String,
+    @ColumnInfo(name = "user_id") val user_id: String?,
+    @ColumnInfo(name = "priority") var priority: String?,
+    @ColumnInfo(name = "event_id") var event_id: String?
 )

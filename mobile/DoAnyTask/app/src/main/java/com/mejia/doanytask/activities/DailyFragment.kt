@@ -2,20 +2,38 @@ package com.mejia.doanytask.activities
 
 import android.content.res.ColorStateList
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.ActionBar
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import com.mejia.doanytask.DoAnyTaskApplication
 import com.mejia.doanytask.MainActivity
 import com.mejia.doanytask.R
+import com.mejia.doanytask.ViewModelFactory
 import com.mejia.doanytask.data.model.Activity
+import com.mejia.doanytask.databinding.FragmentActivityListBinding
 import com.mejia.doanytask.databinding.FragmentDayOrWeekBinding
 import java.time.LocalDateTime
 
 class DailyFragment : Fragment() {
+    val app by lazy {
+        activity?.application as DoAnyTaskApplication
+    }
+
+    private val viewModelFactory by lazy {
+        ViewModelFactory(app.getActivityRepository())
+    }
+    private val viewModel: ActivitiesViewModel by viewModels {
+        viewModelFactory
+    }
+
+
     private lateinit var binding: FragmentDayOrWeekBinding
     private lateinit var selectedDate: LocalDateTime
 
@@ -51,7 +69,7 @@ class DailyFragment : Fragment() {
         binding.monthText.text = selectedDate.month.name
         binding.thisDateText.text = selectedDate.dayOfMonth.toString()
 
-        val acts = List<Activity>(3) { it ->
+        /*val acts = List<Activity>(3) { it ->
             Activity(
                 "",
                 "Evaluación práctica ${it + 1}.\n" ,
@@ -62,16 +80,22 @@ class DailyFragment : Fragment() {
                 "Presentacion\n" + "Diseño App",
                 "", ""
             )
-        }
+        }*/
 
         val activityRecyclerView = binding.activityListRecyclerView
         val activityAdapter = ActivityAdapter()
-
         activityRecyclerView.apply {
             adapter = activityAdapter
         }
-        activityAdapter.setData(acts, 1)
+        viewModel.getAllActivitys()
 
+        viewModel.status.observe(viewLifecycleOwner) { status ->
+            when (status) {
+                is ActivityUiState.Error -> Log.d("Activity List Status", "Error", status.exception)
+                ActivityUiState.Loading -> Log.d("Activity List Status", "Loading")
+                is ActivityUiState.Success -> handleSuccess(status, activityAdapter, null)
+            }
+        }
     }
 
     private fun actionPrevius(view: View) {
@@ -82,5 +106,30 @@ class DailyFragment : Fragment() {
     private fun actionNext(view: View) {
         selectedDate = selectedDate.plusDays(1)
         setDayView()
+    }
+
+
+    private fun handleSuccess(status: ActivityUiState.Success, ActivityAdapter: ActivityAdapter, pBar: ProgressBar?) {
+        status.activities.observe(viewLifecycleOwner) { data ->
+            ActivityAdapter.setData(filter(data), 1)
+        }
+        if(pBar != null)
+            pBar?.setVisibility(View.GONE)
+    }
+
+    private fun filter( acts: List<Activity>): List<Activity> {
+
+        var month = selectedDate.monthValue.toString()
+        var day = selectedDate.dayOfMonth.toString()
+
+        if(selectedDate.monthValue < 10)
+            month = "0${selectedDate.monthValue}"
+
+        if(selectedDate.dayOfMonth < 10)
+            day = "0${selectedDate.dayOfMonth}"
+
+        val date = "${selectedDate.year}/${month}/${day}".toRegex()
+
+        return acts.filter { date.containsMatchIn(it.date)}
     }
 }

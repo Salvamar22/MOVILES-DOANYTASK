@@ -1,16 +1,15 @@
-package com.mejia.doanytask.Login
+package com.mejia.doanytask.login
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import com.mejia.doanytask.R
 import com.mejia.project.DatePickerFragment
 import kotlinx.android.synthetic.main.activity_registrarse.*
-import kotlinx.android.synthetic.main.politicy.*
 
 class RegistrarseActivity : AppCompatActivity() {
+    val userField: String = ""
+    val passwordField: String = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
